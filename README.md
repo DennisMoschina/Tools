@@ -8,7 +8,7 @@ However, I changed it to fit my purpose and I added some functionality.
 The A0 port of the arduino is configured as the input of the oscilloscope.
 In order to get the voltages right, I recommend attaching the ground pin of the Arduino to ground of the measured voltage.
 The range of the oscilloscope is limited between 0V and 5V, due to the hardware limitations of the Arduino.
-While the resolution can be changed in the Arduino source code by changing the timeBase, the standard is set to 10000 Hz.
+While the resolution can be changed in the Arduino source code by changing the timeBase, the standard is set to 10000 Hz. When changing the resolution, you have to make sure to change it in to python scipt too, otherwise the scale is wrong.
 </p>
 <p>
 Before you start the python script, you have to make sure all needed libraries are installed, which are PyGame,
@@ -19,5 +19,5 @@ In the python code, the port, the Arduino is connect to, has to be changed to fi
 The oscilloscope is also capable of recording data to examine it afterwards.
 To start a recording simply press the R key on your keyboard. To stop the recording press S. To view the recorded data press P
 and to quit press Q. When the recorded data is displayed, you can zoom by pressing + and - and you can move through the 
-recorded data by pressing the arrow keys.
+recorded data by pressing the arrow keys. The yellow line is a reference, which can be moved by up and dow keys in order to get a specific voltage.
 </p>
